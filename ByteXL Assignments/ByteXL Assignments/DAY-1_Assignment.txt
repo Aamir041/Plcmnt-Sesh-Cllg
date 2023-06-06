@@ -1,0 +1,305 @@
+
+EASY PROBLEM 1:
+
+
+
+
+Description
+
+Using characters: . (dot), * (asterisk), / (slash) and \ (backslash) print a grid-like pattern as shown in the sample test case.
+
+
+Input Format
+
+The first line of the input contains one integer T - the number of test cases. Then T test cases follow.
+
+The first line of each test case contains three space-separated integers N, M, P. - P denotes the size of .(dot) and /,\(slash) block.
+
+
+Output Format
+
+For each test case, print the required pattern.
+
+
+Constraints
+
+1≤ T ≤ 100
+
+1≤ N, M ≤ 100
+
+1≤ P ≤ 100
+
+It is guaranteed that the sum of NMP*P for all test cases does not exceed 106.
+
+
+Sample Input 1
+
+3
+3 4 3
+4 2 1
+3 3 2
+
+Sample Output 1
+
+*****************
+*\..*../*\..*../*
+*.\.*./.*.\.*./.*
+*..\*/..*..\*/..*
+*****************
+*../*\..*../*\..*
+*./.*.\.*./.*.\.*
+*/..*..\*/..*..\*
+*****************
+*\..*../*\..*../*
+*.\.*./.*.\.*./.*
+*..\*/..*..\*/..*
+*****************
+
+*****
+*\*/*
+*****
+*/*\*
+*****
+*\*/*
+*****
+*/*\*
+*****
+
+**********
+*\.*./*\.*
+*.\*/.*.\*
+**********
+*./*\.*./*
+*/.*.\*/.*
+**********
+*\.*./*\.*
+*.\*/.*.\*
+**********
+
+Sample Input 2
+
+1
+3 1 3
+
+Sample Output 2
+
+*****
+*\..*
+*.\.*
+*..\*
+*****
+*../*
+*./.*
+*/..*
+*****
+*\..*
+*.\.*
+*..\*
+*****
+
+Note
+
+The diagonal of the first square of the grid is directed towards the down-right corner, use the \ (backslash) character to print it, while the next diagonal will be directed towards the upper-right corner, use the / (slash) character to print it.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+EASY PROBLEM 2:
+
+
+
+
+
+
+Description
+
+A triangle of numbers is called a 'Special Triangle' if every number in each row (except the last row) is strictly less than the two numbers which are just below it.
+
+Consider the example shown in the first figure. Every number is less than the numbers which are just below it (except the numbers in the last row). For the first row, the numbers which are just below the 2 are 3 and 3. For the second row, the elements below the first 3 are 5 and 4, and for the second 3 are 4 and 5.
+
+https://lh5.googleusercontent.com/E7oNYu6fZwIg3x4le-Zh5eI80mYs1IuiVY__M2LZtu9RZIIwg8dnF-MQloclbWaJXmL6qX1ujJdKHVwygYyd1M3d2V5oA4BNqDhiagmEHwxY0btZKSuEz1G2b3bwG8NGwfIpPIdw
+(Copy paste this link on browser and get the Image)
+
+Now consider the second example figure. The element marked in red is violating the property of Special Triangle.
+
+https://lh5.googleusercontent.com/XnBBZxV32Q6lVxRjsmY-ZQJ1YAfEfJFQqSXbIzWsAwiVXlGYeh2sgCT0MQRkL1GNcKJpatRZZaeLjzaHJmuH_SsJPmW2zrs_RtPcqPVm4hU4TDWTP0V28Md5XlrhlLuwhlRafiXA
+(Copy paste this link on browser and get the Image)
+
+You have given an array of numbers. You have to find whether you can construct a Special Triangle using only those numbers. If you can construct such a triangle, print 'YES', otherwise 'NO'.
+
+ 
+
+Input Format
+
+The first line contains the height of the triangle h, 1 <= h <= 1000  that you need to construct using the given numbers.
+
+The second line contains n = h*(h + 1)/2  space-separated numbers, A1, A2…..An an such that 0 <= Ai <= 10^9.
+
+
+Output Format
+
+If you can construct a Special triangle using the given numbers print 'YES', otherwise 'NO' (without quotes).
+
+
+Sample Input 1
+
+3
+5 4 2 3 5 3
+ 
+
+
+Sample Output 1
+
+YES
+ 
+
+
+Sample Input 2
+
+3
+6 3 2 2 3 3
+ 
+
+
+Sample Output 2
+
+NO
+
+Note
+
+Explanation 1: See the above first example figure.
+
+Explanation 2: We can't able to construct any special triangle using these number
+
+
+
+
+
+
+
+
+
+
+
+
+MEDIUM PROBLEM 1:
+
+
+https://leetcode.com/problems/optimal-partition-of-string/description/
+
+Copy paste this link on browser and get the problem
+
+
+	
+
+
+
+
+
+MEDIUM PROBLEM 2:
+
+
+https://leetcode.com/problems/number-of-subsequences-that-satisfy-the-given-sum-condition/description/
+
+Copy paste this link on browser and get the problem
+
+
+
+
+
+
+
+
+
+MEDIUM PROBLEM 3:
+
+
+https://leetcode.com/problems/frequency-of-the-most-frequent-element/description/
+
+Copy paste this link on browser and get the problem
+
+
+
+
+
+
+
+
+
+HARD PROBLEM 1:
+
+
+
+Description
+
+You have a robot which can move up, down, left and right. You placed it at (X, Y) in a grid with R rows and C columns. The robot is given N instructions of the form N(up), S(down), E(right) and W(left). The robot will continue moving the same direction until it reaches a square that it has not been in before. Find the coordinates of the square the robot will reach after the instructions are performed. The robot will not go out of the grid, according to the instructions.
+
+
+Input Format
+
+The first line of the input contains one integer T - the number of test cases. Then T test cases follow.
+
+The first line of each test case contains five space-separated integers N, R, C, X, Y - the length of the instructions, size of grid and the coordinates of initial position.
+
+The second line of each test case contains a string S - the instructions .
+
+
+Output Format
+
+For each test case, print the coordinates of the square the robot will reach after the instructions are performed.
+
+
+Constraints
+
+1≤ T ≤ 105
+
+1≤ N ≤ 5*104
+
+1≤ R, C ≤ 5*104
+
+1≤ X ≤ R
+
+1≤ Y ≤ C
+
+
+
+
+Sample Input 1
+
+2
+3 4 5 2 3
+SNW
+4 5 5 2 2 
+SESE
+
+Sample Output 1
+
+1 2
+4 4
+
+Note
+
+For the first test case, (2,3) -> (3,3) -> (1,3) -> (1,2)
+
+For the second test case, (2,2) -> (3,2) -> (3,3) -> (4,3) -> (4,4)
+
+
+
+
+
+
+
+
+
